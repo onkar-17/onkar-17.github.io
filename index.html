@@ -1,41 +1,190 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login to SCC</title>
+    <link href="style.css" rel="stylesheet">
     <style>
-        .mycontainer {
-            color: white;
-            width: 300px;
-            height: 200px;
-            background-image: url('https://www.ancient-origins.net/sites/default/files/field/image/Agesilaus-II-cover.jpg');
-            background-position: center;
-            background-size:cover;
-
-            border-radius: 10px;
-            text-align: center;
-            padding-top: 40px;
-        }
-        .wrap {
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            max-width: 960px;
             margin: auto;
-            width: 300px;
+        }
+
+        h1 {
+            font-size: 3em;
+            letter-spacing: .6em;
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            padding-bottom: 1em;
+        }
+
+        h3 {
+            font-size: 1em;
+            padding-bottom: 1em;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            margin-top: 3em;
+        }
+
+        header {
+            text-align: center;
+            margin: auto 2em;
+        }
+
+        section {
+            margin: auto 1em 4em 2em;
+        }
+
+        i {
+            margin-right: .5em;
+        }
+
+        p {
+            margin: .2em auto
+        }
+
+        hr {
+            border: none;
+            background-color: lightgray;
+            height: 1px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-weight: 100;
+            margin-bottom: 0;
+        }
+
+        #mainLeft {
+            border-right: 1px solid lightgray;
         }
     </style>
+    <title>Onkar's resume</title>
 </head>
 
 <body>
-    <div class="wrap">
+    <header id="header">
+        <!-- resume header with your name and title -->
+        <h1><b>ONKAR</b> GUPTA</h1>
+        <hr>
+        WEB DEVELOPER
+        <hr>
+    </header>
+    <main>
+        <article id="mainLeft">
+            <section>
+                <h2>CONTACT</h2>
+                <!-- contact info including social media -->
+                <p>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    Gmail - guptaonkar02@gmail.com
+                </p>
+                <p>
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                    Github - <a href="https://github.com/onkar-17">onkar-17</a>
+                </p>
+                <p>
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    Linkedin - <a href="https://www.linkedin.com/in/onkar-gupta-b32820254/">Onkar Gupta</a>
+                </p>
+            </section>
+            <section>
+                <h2>SKILLS</h2>
+                <!-- your skills -->
+                <ul>
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+            </section>
+            <section>
+                <h2>EDUCATION</h2>
+                <!-- your education -->
 
-        <div class="mycontainer">
-            <h1>Login Page</h1>
-            <h5>Type your ID and PW</h5>
-        </div>
-        <p>ID: <input type="text"/></p>
-        <p>PW: <input type="text"/></p>
-        <button>Login</button>
-    <!div>
+                <h3>Bachelor Of Technology Computer Science and Enginnering</h3>
+                <p>
+                    JIS University
+                </p>
+                <p>
+                    2022 - 2026
+                </p>
+                <h3>Higher Secondary Education<br></h3>
+                <p>
+                    Bholananda National Vidyalaya
+                </p>
+                <p>
+                    2020 - 2022
+                </p>
+
+
+            </section>
+        </article>
+        <article id="mainRight">
+            <section>
+                <h2>ABOUT</h2>
+                <!-- about you -->
+                <p>I am a passionate web developer with a strong foundation in coding and a knack for creating intuitive
+                    user experiences. I thrive on challenges and am always eager to push the boundaries of what's
+                    possible in web development.</p>
+            </section>
+            <section>
+                <h2>WORK EXPERIENCE</h2>
+                <!-- your work experience -->
+                <h3>Internship</h3>
+                <p>
+                    Bharat Intern | February 2024 – March 2024
+                </p>
+                <ul>
+                    <li>Worked on web development.</li>
+                    <li>Created a registration form to sign up and store user information using HTML, CSS, Node.js in
+                        MongoDB.</li>
+
+                </ul>
+
+            </section>
+            <section>
+                <h2>PROJECTS</h2>
+                <ul>
+                    <li>Registration Form with backend.</li>
+                    <li>Created a One-Page Crayon Store and used Currency API to display the current rate of USD/INR.
+                    </li>
+                    <li>Built an Instagram Website Clone.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>CERTIFICATIONS</h2>
+                <ul>
+                    <li>Google Cloud Career Practitioners Pathway Campaign(Oct 2022)</li>
+                    <li>Google Cloud Computing Fundamentals and Generative AI(Nov 2023)</li>
+                </ul>
+            </section>
+            <section>
+                <h2>EXTRACURICULAR ACTIVITIES/RESPONSIBILITES</h2>
+                <ul>
+                    <li>Member of GDSC JIS University.</li>
+                    <li>Leadership qualities.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>LANGUAGES</h2>
+                <ul>
+                    <li>English</li>
+                    <li>Hindi</li>
+
+                </ul>
+            </section>
+        </article>
+    </main>
 </body>
 
 </html>
